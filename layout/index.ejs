@@ -1,0 +1,19 @@
+<div class="demo-blog__posts mdl-grid">
+  <% page.posts.each(function(post, i){ %>
+    <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
+      <div class="mdl-card__media mdl-color-text--grey-50">
+        <h3><a href="<%- post.link %>"><%- post.title %></a></h3>
+      </div>
+      <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+        <%- post._content %>
+      </div>
+      <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+        <div class="minilogo"></div>
+        <div>
+          <strong><%- config.author %></strong>
+          <span><%- post.date %></span>
+        </div>
+      </div>
+    </div>
+  <% }) %>
+</div>
