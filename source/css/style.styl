@@ -1,6 +1,6 @@
 body
   &::before
-    background-image url('images/bg.jpg')
+    background-image url('/images/bg.png')
     background-size cover
     background-attachment fixed
     content ''
@@ -96,9 +96,9 @@ body
         text-decoration none
       &.quote
         &:before
-          content 'â€œ'
+          content '“'
         &:after
-          content 'â€'
+          content '”'
   .mdl-card__title
     padding 16px
     -webkit-box-flex 1
@@ -212,9 +212,6 @@ body
           -webkit-order -1
           -ms-flex-order -1
           order -1
-  .coffee-pic
-    .mdl-card__media
-      background-image url('images/coffee.jpg')
   .something-else
     overflow visible
     z-index 10
@@ -255,12 +252,6 @@ body
       background-color #F5F5F5
       border-bottom-left-radius 2px
       border-bottom-right-radius 2px
-  .on-the-road-again
-    .mdl-card__media
-      background-image url('images/road.jpg')
-  .shopping
-    .mdl-card__media
-      background-image url('images/shopping.jpg')
   .section-spacer
     -webkit-box-flex 1
     -webkit-flex-grow 1
@@ -272,10 +263,10 @@ body
   .minilogo
     width 44px
     height 44px
-    background-image url('images/avatar.png')
+    background-image url('/images/avatar.jpg')
     background-position center
     background-repeat no-repeat
-    background-size 50%
+    background-size cover
     border-radius 22px
     background-color #F5F5F5
   .mdl-mini-footer
@@ -304,7 +295,7 @@ body
   .hexo-blog__posts
     & > .mdl-card
       .mdl-card__media
-        background-image url('images/road_big.jpg')
+        background-image url('/images/road_big.jpg')
         height 280px
   .comments
     background-color #EEE
